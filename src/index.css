@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-50: #eef2f6;
+  --color-navy-100: #d5e0eb;
+  --color-navy-500: #3b5c87;
+  --color-navy-800: #122849;
+  --color-navy-900: #0a192f;
+  --color-gold-300: #f3dfa2;
+  --color-gold-400: #e5ca7c;
+  --color-gold-500: #d4af37;
+  --color-gold-600: #b5952f;
+  
+  --font-sans: 'IBM Plex Sans Thai', ui-sans-serif, system-ui, sans-serif;
+  --font-inter: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-[#F9F6F0] text-navy-900 font-sans antialiased overflow-x-hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for clean horizontal scrolls if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
